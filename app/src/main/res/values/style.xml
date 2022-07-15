@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="DarkGreenBgWhiteText17">
+        <item name="android:background">@drawable/btn_dark_green_bg</item>
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:textSize">17sp</item>
+        <item name="android:layout_marginHorizontal">15dp</item>
+        <item name="android:paddingVertical">15dp</item>
+        <item name="android:gravity">center_horizontal</item>
+    </style>
+
+    <style name="White23">
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:textSize">23sp</item>
+    </style>
+
+    <style name="LightGreen20">
+        <item name="android:background">@drawable/white_bg</item>
+        <item name="android:textColorHint">@color/colorLightGreen</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:paddingStart">25dp</item>
+        <item name="android:paddingVertical">15dp</item>
+        <item name="android:layout_marginHorizontal">20dp</item>
+    </style>
+
+    <style name="Black23">
+        <item name="android:textColor">@color/colorBlack</item>
+        <item name="android:textSize">23sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    
+    <style name="LayoutLightGreen">
+        <item name="android:background">@drawable/light_green_corner_bg</item>
+        <item name="android:padding">15dp</item>
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:textSize">17sp</item>
+    </style>
+
+    <style name="LayoutDarkGreen">
+        <item name="android:background">@drawable/dark_green_corner_bg</item>
+        <item name="android:padding">15dp</item>
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:textSize">17sp</item>
+    </style>
+
+    <style name="WhiteButton">
+        <item name="android:textSize">17sp</item>
+        <item name="android:background">@drawable/btn_dark_green_bg</item>
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:paddingHorizontal">20dp</item>
+        <item name="android:paddingVertical">10dp</item>
+        <item name="android:layout_marginTop">20dp</item>
+    </style>
+
+    <style name="ViewPagerStyle">
+        <item name="android:layout_marginVertical">20dp</item>
+    </style>
+
+    <style name="BlackBold17">
+        <item name="android:textColor">@color/colorBlack</item>
+        <item name="android:textSize">17sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_marginTop">15dp</item>
+    </style>
+
+    <style name="Black20">
+        <item name="android:textColor">@color/colorBlack</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:layout_marginVertical">15dp</item>
+    </style>
+
+    <style name="AppBottomSheetDialogTheme"
+        parent="Theme.Design.Light.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/AppModalStyle</item>
+    </style>
+
+    <style name="AppModalStyle"
+        parent="Widget.Design.BottomSheet.Modal">
+        <item name="android:background">@drawable/rounded_dialog</item>
+    </style>
+
+</resources>

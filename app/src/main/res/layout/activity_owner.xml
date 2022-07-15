@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingHorizontal="20dp">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvOwnerName"
+        style="@style/Black23"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Shop Owner"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/ivOwnerProfile"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:onClick="onClick"
+        android:src="@drawable/girl_profile2"
+        app:layout_constraintBottom_toBottomOf="@id/tvOwnerName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/tvOwnerName" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvTotalShop"
+        style="@style/LayoutLightGreen"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_25"
+        android:layout_marginEnd="10dp"
+        android:lineSpacingExtra="25dp"
+        android:onClick="onClick"
+        android:text="Total Shops\n5"
+        app:layout_constraintEnd_toStartOf="@id/tvLiveShop"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvOwnerName" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvLiveShop"
+        style="@style/LayoutDarkGreen"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="10dp"
+        android:lineSpacingExtra="25dp"
+        android:onClick="onClick"
+        android:text="Live Shops\n3"
+        app:layout_constraintBottom_toBottomOf="@id/tvTotalShop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/tvTotalShop"
+        app:layout_constraintTop_toTopOf="@id/tvTotalShop" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvTotalImages"
+        style="@style/LayoutDarkGreen"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="10dp"
+        android:lineSpacingExtra="25dp"
+        android:onClick="onClick"
+        android:text="Total Images\n7"
+        app:layout_constraintEnd_toStartOf="@id/tvMusic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvTotalShop" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvMusic"
+        style="@style/LayoutLightGreen"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:lineSpacingExtra="25dp"
+        android:onClick="onClick"
+        android:text="Music\n10"
+        app:layout_constraintBottom_toBottomOf="@id/tvTotalImages"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/tvTotalImages"
+        app:layout_constraintTop_toTopOf="@id/tvTotalImages" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvHeadingMusic"
+        style="@style/Black23"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Music"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvTotalImages" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvGreyLine"
+        android:layout_width="match_parent"
+        android:layout_height="1.5dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/colorGrey"
+        app:layout_constraintTop_toBottomOf="@id/tvHeadingMusic" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ivAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onClick"
+        android:src="@drawable/ic_add_circle"
+        app:layout_constraintBottom_toBottomOf="@id/tvHeadingMusic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/tvHeadingMusic" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvMusic"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvGreyLine"
+        tools:listitem="@layout/row_music" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

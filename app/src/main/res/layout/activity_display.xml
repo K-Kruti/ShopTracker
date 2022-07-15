@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorCvBg"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnCheckOut"
+        android:text="Check Out"
+        android:onClick="onClick"
+        android:layout_marginEnd="20dp"
+        style="@style/WhiteButton"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <androidx.viewpager.widget.ViewPager
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:id="@+id/vpImage"
+        style="@style/ViewPagerStyle"
+        app:layout_constraintTop_toBottomOf="@id/btnCheckOut"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <com.google.android.material.tabs.TabLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tabLayoutImage"
+        app:tabGravity="center"
+        android:background="#00FFFFFF"
+        app:tabIndicatorGravity="center"
+        app:tabIndicatorHeight="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/vpImage"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvSongName"
+        android:text="deja vu"
+        android:textColor="@color/colorBlack"
+        android:textSize="@dimen/dp_25"
+        app:layout_constraintBottom_toTopOf="@id/tvSingerName"
+        app:layout_constraintStart_toStartOf="@id/tvSingerName"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvSingerName"
+        android:text="Olivia Rodrigo"
+        android:textColor="@color/colorBlack"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toTopOf="@id/tvMusicStart"
+        app:layout_constraintStart_toStartOf="@id/tvMusicStart"/>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ivLike"
+        android:src="@drawable/ic_star_border"
+        app:layout_constraintTop_toTopOf="@id/tvSongName"
+        app:layout_constraintBottom_toBottomOf="@id/tvSingerName"
+        app:layout_constraintEnd_toEndOf="@id/tvMusicEnd"/>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ivPlayPause"
+        android:onClick="onClick"
+        android:src="@drawable/ic_play_circle_filled"
+        android:layout_marginStart="@dimen/dp_10"
+        app:layout_constraintTop_toTopOf="@id/seekBarMusic"
+        app:layout_constraintBottom_toBottomOf="@id/seekBarMusic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/seekBarMusic"/>
+
+    <androidx.appcompat.widget.AppCompatSeekBar
+        android:layout_width="0dp"
+        android:max="27"
+        android:progress="0"
+        android:clickable="false"
+        android:layout_height="wrap_content"
+        android:id="@+id/seekBarMusic"
+        app:layout_constraintStart_toEndOf="@id/ivPlayPause"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="@dimen/dp_100"/>
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvMusicStart"
+        android:text="0:00"
+        android:layout_marginStart="@dimen/dp_5"
+        android:textSize="@dimen/sp_17"
+        app:layout_constraintStart_toStartOf="@id/seekBarMusic"
+        app:layout_constraintBottom_toTopOf="@id/seekBarMusic"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvMusicEnd"
+        android:text="3:00"
+        android:layout_marginEnd="@dimen/dp_15"
+        android:textSize="@dimen/sp_17"
+        app:layout_constraintEnd_toEndOf="@id/seekBarMusic"
+        app:layout_constraintBottom_toTopOf="@id/seekBarMusic"/>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

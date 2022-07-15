@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="shop_tracker">Shop Tracker</string>
+    <string name="total_shops">Total Shops</string>
+    <string name="email_error">Please enter a username</string>
+    <string name="password_error">Please enter a password</string>
+    <string name="error_invalid_email">Please enter a valid username</string>
+    <string name="error_invalid_password">Please enter a valid password</string>
+    <string name="total_images">Total Images</string>
+    <string name="camera">Camera</string>
+    <string name="gallery">Gallery</string>
+    <string name="cancel">Cancel</string>
+</resources>
