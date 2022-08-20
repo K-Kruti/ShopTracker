@@ -10,7 +10,7 @@
 
 <h3>Description</h3>
 
-Shop Tracker is Android application used by owner and shop-keeper of various shops.
+Shop Tracker is Android application used by  owner and shop-keeper of various shops.
 It keeps track of shop-keeper's activity for owner, Owner can give and restict some permissions.
 This app has Music feature that allow owner to create playlist for his shop, to add or remove songs from playlist as well as to create Image Slider to display at particular branch.
 
